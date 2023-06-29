@@ -1,0 +1,14 @@
+name: Print Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Running workflow"
