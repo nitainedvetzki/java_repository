@@ -1,5 +1,5 @@
+import com.google.common.base.CharMatcher;
 import com.google.common.collect.ImmutableList;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.text.WordUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,10 +12,10 @@ public class Main {
         LOGGER.info("List: {}", list);
         
         String str = "   example string   ";
-        String trimmed = StringUtils.trim(str);
+        String trimmed = CharMatcher.whitespace().trimFrom(str);
         LOGGER.info("Trimmed String: '{}'", trimmed);
         
-        String capitalized = WordUtils.capitalizeFully(trimmed);  // Using the commons-text package
+        String capitalized = WordUtils.capitalizeFully(trimmed);
         LOGGER.info("Capitalized String: '{}'", capitalized);
     }
 }
