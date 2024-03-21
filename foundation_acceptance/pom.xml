@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.example</groupId>
+    <artifactId>azure-spring-app</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    
+    <dependencies>
+        <!-- Azure Spring Boot -->
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>azure-spring-boot</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>azure-spring-boot-starter</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>azure-spring-boot-starter-active-directory</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>azure-spring-boot-starter-servicebus-jms</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>azure-spring-boot-starter-storage</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        
+        <!-- Bouncy Castle -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcmail-jdk14</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcmail-jdk15on</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk15on</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk15to18</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk18on</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        
+        <!-- Spring Framework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-acl</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-cas</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        
+        <!-- Webjars -->
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>angular</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>angular-animate</artifactId>
+            <version>VERSION_HERE</version> <!-- Replace VERSION_HERE with the appropriate version -->
+        </dependency>
+        <dependency
